@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0);
+    height: 100vh;
+    background-image: url(./F7T86d.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container{
+    height: auto;
+    width: auto;
+    background-color: #294285;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 10px 10px 5px 0px #294285;
+}
+#mainPage{
+    height: 220px;
+    width: 400px;
+}
+#mainPage .c1{
+    color: #FC4C02;
+}
+#mainPage .c3{
+  color: #0FFC56;
+}
+#mainPage h2{
+     font-size: 52px;   
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 1rem;
+    text-shadow: 2px 3px #FC4C02, 
+    2px 2px #FC4C02, 
+    2px 1px #0FFC56
+  
+}
+#win h2{
+    font-size: 52px;
+    color: #E3B448;
+}
+#mainPage h4{
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.852);
+}
+#mainPage #button{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;;
+}
+#button button{
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+    background-color: aqua;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #D9017A;
+    transform: scale(1);
+    transition: 0.5s;
+}
+#button button:first-child{
+    margin-right: 40px;
+}
+#button button:hover{
+transform: scale(0.9);
+}
+#button1 button{
+    height: 40px;
+    width: 153px;
+    cursor: pointer;
+    background-color: aqua;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #D9017A;
+    transform: scale(1);
+    transition: 0.5s;
+}
+#button1 button:first-child{
+    margin-right: 40px;
+}
+#button1 button:hover{
+transform: scale(0.9);
+}
+#win{
+    display:none;
+}
+#win #button1{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+#win #button1 button{
+    margin-top: 15px;
+}
+#gamePage{
+    width: 350px;
+    height: 550px;
+    position: relative;
+    padding: 20px;
+    display: none;
+    
+}
+#gamePage #btnHeader{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    height: 60px;
+    width: 310px;
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%) , -2px -2px 5px rgb(0 0 0 / 87%);
+}
+ #gamePage #btnHeader button{
+    height: 60px;
+    width: 160px;
+      border-radius: 50px; 
+     border: none;
+     outline: none;
+     background-color: transparent;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.60);
+     color: white;
+     font-size: 20px;
+      position: absolute;
+      top: 0;
+     left: 0;
+     z-index: 2;     
+     
+    
+    
+ }  
+  #gamePage #btnHeader #O_Turn{
+     left: 160px;
+     z-index: 3;
+ } 
+ #showChange{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 160px;
+     height: 60px;
+     border-radius: 50px;
+     background-color: #D9017A;;
+     transition: 0.2s;
+     z-index: 1;
+ }
+ #boardGame{
+     height: 400px;
+     width: 330px;
+     position: absolute;
+     top: 150px;
+     left: 10px;
+     display: grid;
+     grid-gap: 15px;
+     grid-template-columns: 100px 100px 100px;
+
+ }
+ .box{
+     height: 100px;
+     width: 100px;
+     box-shadow: 2px 2px 2px rgb(255 255 255 / 26%) , -2px -2px 5px rgb(0 0 0 / 87%);
+     place-items: center;
+     display: grid;
+     cursor: pointer;
+ }
+ .box i{
+     font-size: 60px;
+     color: #D9017A;;
+ }
